@@ -36,7 +36,7 @@ var suchgebiete = [
     lat: 52.238,
     lng: 9.857,
     radius: 900,
-    beschreibung: "Seenplatte + angrenzende Waldstücke."
+    beschbeschreibung: "Seenplatte + angrenzende Waldstücke."
   },
   {
     name: "Giftener Seen",
@@ -153,6 +153,7 @@ var suchgebiete = [
     radius: 600,
     beschreibung: "Verwahrloste Gebäude, Gruben, Müll."
   },
+
   // ============================
   // REGION WOLFENBÜTTEL / HARZ
   // ============================
@@ -330,6 +331,66 @@ var suchgebiete = [
     lng: 10.240,
     radius: 600,
     beschreibung: "Uferbereiche abgesucht."
+  },
+
+  // ============================
+  // REGION SACHSEN-ANHALT
+  // ============================
+  {
+    name: "Bitterfeld",
+    typ: "kreis",
+    lat: 51.623,
+    lng: 12.323,
+    radius: 1500,
+    beschreibung: "Innenstadt und angrenzende Bereiche."
+  },
+  {
+    name: "Goitzsche",
+    typ: "kreis",
+    lat: 51.645,
+    lng: 12.310,
+    radius: 2500,
+    beschreibung: "Uferbereiche, Wege, Zugänge."
+  },
+  {
+    name: "Greppin",
+    typ: "kreis",
+    lat: 51.630,
+    lng: 12.268,
+    radius: 900,
+    beschreibung: "Wohn- und Waldnähe."
+  },
+  {
+    name: "Sandersdorf",
+    typ: "kreis",
+    lat: 51.613,
+    lng: 12.289,
+    radius: 1200,
+    beschreibung: "Wald- und Gewerbegebiete."
+  },
+  {
+    name: "Fuhneaue",
+    typ: "kreis",
+    lat: 51.610,
+    lng: 12.350,
+    radius: 1500,
+    beschreibung: "Auenlandschaft, Wege, Brücken."
+  },
+  {
+    name: "Zörbig",
+    typ: "kreis",
+    lat: 51.626,
+    lng: 12.118,
+    radius: 1500,
+    beschreibung: "Wald- und Feldbereiche."
+  },
+  {
+    name: "Pouch / Muldestausee",
+    typ: "kreis",
+    lat: 51.645,
+    lng: 12.420,
+    radius: 2500,
+    beschreibung: "Nordufer, Wege, Parkplätze."
   },
 
   // ============================
