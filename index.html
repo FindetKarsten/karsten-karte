@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Suchgebiete – Fall Karsten Manczak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; }
+    #map { width: 100%; height: 100%; }
+
+    .legend {
+      background: white;
+      padding: 12px 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .legend-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .legend-icon {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .legend-icon.point {
+      background: black;
+    }
+    .legend-icon.circle {
+      border: 2px solid red;
+      background: rgba(255,0,0,0.15);
+    }
+  </style>
+</head>
+
+<body>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- WICHTIG: sauberer Dateiname + Cache-Buster -->
+<script src="daten.js?v=1"></script>
+
+<script>
+  var map = L.map('map').setView([52.1, 10.2], 9);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap-Mitwirkende'
+  }).addTo(map);
+
+  suchgebiete.forEach(function(eintrag) {
+
+    if (eintrag.typ === "punkt") {
+      L.marker([eintrag.lat, eintrag.lng])
+        .addTo(map)
+        .bindPopup("<b>" + eintrag.name + "</b><br>" + eintrag.beschreibung);
+    }
+
+    if (eintrag.typ === "kreis") {
+      L.circle([eintrag.lat, eintrag.lng], {
+        radius: eintrag.radius,
+        color: "red",
+        fillOpacity: 0.2
+      })
+      .addTo(map)
+      .bindPopup("<b>" + eintrag.name + "</b><br>" + eintrag.beschreibung);
+    }
+
+    if (eintrag.typ === "polygon") {
+      L.polygon(eintrag.punkte, {
+        color: eintrag.farbe || "orange",
+        fillColor: eintrag.farbe || "orange",
+        fillOpacity: 0.15
+      })
+      .addTo(map)
+      .bindPopup("<b>" + eintrag.name + "</b><br>" + eintrag.beschreibung);
+    }
+
+  });
+
+  var legend = L.control({ position: "bottomright" });
+
+  legend.onAdd = function () {
+    var div = L.DomUtil.create("div", "legend");
+    div.innerHTML = `
+      <span class="legend-title">Legende</span>
+      <div class="legend-item">
+        <div class="legend-icon point"></div> Punkt – Einzelner Ort / Hinweis
+      </div>
+      <div class="legend-item">
+        <div class="legend-icon circle"></div> Kreis – Suchradius / Gebiet
+      </div>
+      <div class="legend-item">
+        <div class="legend-icon circle" style="border-color:orange;background:rgba(255,165,0,0.2);"></div>
+        Polygon – Großraum-Suchgebiet
+      </div>
+    `;
+    return div;
+  };
+
+  legend.addTo(map);
+</script>
+
+</body>
+</html>
