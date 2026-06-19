@@ -36,7 +36,7 @@ var suchgebiete = [
     lat: 52.238,
     lng: 9.857,
     radius: 900,
-    beschbeschreibung: "Seenplatte + angrenzende Waldstücke."
+    beschreibung: "Seenplatte + angrenzende Waldstücke."
   },
   {
     name: "Giftener Seen",
@@ -391,6 +391,187 @@ var suchgebiete = [
     lng: 12.420,
     radius: 2500,
     beschreibung: "Nordufer, Wege, Parkplätze."
+  },
+
+  // ============================
+  // NEUE GEBIETE AUS DER DETAILLISTE
+  // ============================
+
+  {
+    name: "Kleingärten Hannover, Sarstedt und Umgebung",
+    typ: "kreis",
+    lat: 52.30,
+    lng: 9.85,
+    radius: 8000,
+    beschreibung: "Alle Kleingärten Hannover, Sarstedt und Umgebung – Vereinsvorsitzende kontaktiert, teils zu zweit abgegangen."
+  },
+  {
+    name: "Waldgebiete Othfresen–Liebenburg–Döhren",
+    typ: "kreis",
+    lat: 52.00,
+    lng: 10.43,
+    radius: 3000,
+    beschreibung: "Waldgebiete um Othfresen, Liebenburg, Döhren (Tatort) in Kleingruppen zu Fuß abgesucht."
+  },
+  {
+    name: "Grube Fortuna Döhren",
+    typ: "kreis",
+    lat: 52.00,
+    lng: 10.46,
+    radius: 1200,
+    beschreibung: "Gebiet um die Grube Fortuna (Döhren)."
+  },
+  {
+    name: "B6 Othfresen–Hildesheim",
+    typ: "kreis",
+    lat: 52.05,
+    lng: 10.20,
+    radius: 6000,
+    beschreibung: "Kleinere Wald- und Dickichtgebiete an der B6 zwischen Othfresen und Hildesheim – mit Auto abgefahren, teils zu Fuß."
+  },
+  {
+    name: "Ortschaften um Hildesheim",
+    typ: "kreis",
+    lat: 52.12,
+    lng: 10.00,
+    radius: 12000,
+    beschreibung: "Harsum, Borsum, Förste, Giesen, Sarstedt, Bockenem, Holle, Sehlde – nach Gefühl und Auffälligkeiten Dickichtgebiete abgesucht."
+  },
+  {
+    name: "Markoldendorf–Einbeck–Ilmegebiet",
+    typ: "kreis",
+    lat: 51.80,
+    lng: 9.90,
+    radius: 4000,
+    beschreibung: "Zwischen Markoldendorf und Einbeck (Gebiet zwischen L580 und Ilme) – über Monate gegraben, Suchhundestaffel, Hullersen, Kohnsen, Juliusmühle."
+  },
+  {
+    name: "Bodenwerder und Umgebung",
+    typ: "kreis",
+    lat: 51.97,
+    lng: 9.52,
+    radius: 3000,
+    beschreibung: "Bodenwerder – Waldwege und abgelegene Stellen, Campingplätze, Waldstück mit Drohne überflogen."
+  },
+  {
+    name: "Stieglitzecke / Magdeburger Hütte",
+    typ: "kreis",
+    lat: 51.86,
+    lng: 10.41,
+    radius: 2000,
+    beschreibung: "Stieglitzecke im Harz (Magdeburger Hütte) – angrenzende Waldstücke zu Fuß zu dritt abgesucht."
+  },
+  {
+    name: "Route Okertalsperre–Seesen",
+    typ: "kreis",
+    lat: 51.90,
+    lng: 10.35,
+    radius: 15000,
+    beschreibung: "Route von der Okertalsperre über Altenau, Clausthal-Zellerfeld, Bad Grund, Lautenthal bis Seesen – nach auffälligen Bereichen geschaut."
+  },
+  {
+    name: "Campingplatz Prahljust / Teichkette",
+    typ: "kreis",
+    lat: 51.80,
+    lng: 10.35,
+    radius: 3000,
+    beschreibung: "Campingplatz Prahljust – Gebiete am Pixhaier Teich, Sumpfteich bis Bärenbrucher Teich in Kleingruppe abgesucht."
+  },
+  {
+    name: "Stieglitzecke–Clausthal an der B242",
+    typ: "kreis",
+    lat: 51.84,
+    lng: 10.42,
+    radius: 4000,
+    beschreibung: "Wege von der Stieglitzecke bis Clausthal an der 242 angefahren, teils zu Fuß abgegangen."
+  },
+  {
+    name: "Ostharingen–Harhof–Ostlutter–Steinbruch",
+    typ: "kreis",
+    lat: 52.00,
+    lng: 10.30,
+    radius: 4000,
+    beschreibung: "Waldstücke Ostharingen – Harhof – Ostlutter – Steinbruch Ostlutter, inkl. Bunker, zu Fuß zu zweit abgegangen."
+  },
+  {
+    name: "Waldgebiete Gebhardshagen",
+    typ: "kreis",
+    lat: 52.10,
+    lng: 10.30,
+    radius: 2500,
+    beschreibung: "Angrenzende Waldgebiete an Gebhardshagen."
+  },
+  {
+    name: "Verlassene Tankstelle Haverlah–Salzgitter",
+    typ: "kreis",
+    lat: 52.05,
+    lng: 10.30,
+    radius: 800,
+    beschreibung: "Verlassene Tankstelle mit Bauzäunen zwischen Haverlah und Salzgitter."
+  },
+  {
+    name: "Angelteiche Probsteiburg",
+    typ: "kreis",
+    lat: 51.93,
+    lng: 10.28,
+    radius: 2000,
+    beschreibung: "Wege an den Angelteichen Probsteiburg – mit Hund abgegangen, nach Auffälligkeiten geschaut."
+  },
+  {
+    name: "Wege im Okertal",
+    typ: "kreis",
+    lat: 51.90,
+    lng: 10.33,
+    radius: 2500,
+    beschreibung: "Wege im Okertal – mit Hund abgegangen, nach Auffälligkeiten geschaut."
+  },
+  {
+    name: "Mittellandkanal und Stichkanal – Zufahrten",
+    typ: "kreis",
+    lat: 52.32,
+    lng: 10.30,
+    radius: 4000,
+    beschreibung: "Wege/Zufahrten am Mittellandkanal und am Stichkanal abgefahren."
+  },
+  {
+    name: "Sachsen-Anhalt Tour Ilsenburg–Heynburg",
+    typ: "kreis",
+    lat: 51.85,
+    lng: 11.10,
+    radius: 30000,
+    beschreibung: "Touren über Ilsenburg, Blankenburg, Quedlinburg, Halberstadt, Oschersleben, Aschersleben, Westerhausen, Heynburg – nach verlassenen Gebäuden, verwahrlosten Gärten, Schuppen gesucht."
+  },
+  {
+    name: "Route Baumarkt Bitterfeld–Bernburg–Helmstedt–Braunschweig",
+    typ: "kreis",
+    lat: 52.00,
+    lng: 11.00,
+    radius: 40000,
+    beschreibung: "Tour vom Baumarkt Bitterfeld über Bernburg und Helmstedt nach Braunschweig – Ausschau nach geeigneten Ablageorten."
+  },
+  {
+    name: "A36 Braunschweig–Bitterfeld Korridor",
+    typ: "kreis",
+    lat: 52.00,
+    lng: 10.80,
+    radius: 50000,
+    beschreibung: "Alle Ortschaften und Bereiche an der A36 zwischen Braunschweig und Bitterfeld – jedes mögliche Gelände in Augenschein genommen."
+  },
+  {
+    name: "Innerstetalsperre",
+    typ: "kreis",
+    lat: 51.90,
+    lng: 10.25,
+    radius: 2500,
+    beschreibung: "Bereiche um die Innerstetalsperre."
+  },
+  {
+    name: "Okertalsperre – zusätzliche Bereiche",
+    typ: "kreis",
+    lat: 51.88,
+    lng: 10.43,
+    radius: 3000,
+    beschreibung: "Weitere Bereiche um die Okertalsperre."
   },
 
   // ============================
